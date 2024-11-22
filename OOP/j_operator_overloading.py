@@ -12,7 +12,7 @@ print(s1 + s2)
 
 # solving an operator overloading error
 
-
+"""'
 class sum:
     def __init__(self, x) -> None:
         self.x = x
@@ -47,3 +47,33 @@ print(num1.__lt__(num2))
 
 print(num1 == num2)
 print(num1.__eq__(num2))
+"""
+
+
+class House:
+    def __init__(self, window, door) -> None:
+        self.window = window
+        self.door = door
+
+    def view(self):
+        print("The house has", self.window, "windows and", self.door, "doors.")
+
+    def __add__(self, other):
+        new_window = self.window + self.window
+        new_door = self.door + other.door
+        return (
+            "New house has "
+            + str(new_window)
+            + " windows and "
+            + str(new_door)
+            + " doors."
+        )
+
+
+h1 = House(6, 2)
+h2 = House(4, 1)
+
+h1.view()
+h2.view()
+
+print(h1 + h2)  # h1.__add__(h2)
