@@ -7,7 +7,7 @@ class Student:
         Student.count += 1
 
     def details(self):
-        print(f"Name: {self.name}, ID: {self.id}, Student count: {self.count}")
+        print(f"Name: {self.name}, ID: {self.id}")
 
 
 s1 = Student("Bob", 11)
@@ -15,3 +15,4 @@ s2 = Student("Carol", 22)
 s3 = Student("Mike", 33)
 
 s1.details()
+print("Student Count:", Student.count)
