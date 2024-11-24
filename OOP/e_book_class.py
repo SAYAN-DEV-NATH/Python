@@ -12,13 +12,7 @@ class Book:
 
     def details(self):
         print(
-            "Book Name:",
-            self.name,
-            "\nAuthor Name:",
-            self.author,
-            "\nPrice:",
-            self.price,
-            "Taka.",
+            f"Book Name: {self.name}\nAuthor Name: {self.author}\nPrice: {self.price} Taka"
         )
 
 
