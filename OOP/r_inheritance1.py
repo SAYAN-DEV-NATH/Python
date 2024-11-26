@@ -23,8 +23,4 @@ class BBA(Student):
 
 s1 = CSE("Nayan", 11, 3)
 s2 = BBA("Abrar", 22)
-
-s1.details()
-s2.details()
-s1.cry()
-s2.party()
+print(help(s1))
