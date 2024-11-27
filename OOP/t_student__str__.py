@@ -3,7 +3,7 @@ class Student:
         self.name = name
         self.id = id
 
-    def __str__(self) -> str:
+    def __str__(self) -> str:  # overriding
         return f"This is {self.name}"
 
 
